@@ -1,9 +1,21 @@
 {
   "name": "skl-autospace",
   "version": "1.0.0",
-  "description": "",
-  "private":true,
+  "private": true,
   "scripts": {},
   "author": "SHAKIL",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shakilshegu/SKL-AUTOSPACE.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shakilshegu/SKL-AUTOSPACE/issues"
+  },
+  "homepage": "https://github.com/shakilshegu/SKL-AUTOSPACE#readme",
+  "description": ""
 }
