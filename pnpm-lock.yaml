@@ -17,6 +17,10 @@ importers:
       new:
         specifier: ^0.1.1
         version: 0.1.1
+    devDependencies:
+      typescript:
+        specifier: ^5.5.4
+        version: 5.5.4
 
   apps/api:
     dependencies:
@@ -111,6 +115,9 @@ importers:
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
+      sample-lib:
+        specifier: link:..\libs\sample-lib
+        version: link:../libs/sample-lib
     devDependencies:
       '@types/node':
         specifier: ^20
@@ -136,6 +143,8 @@ importers:
       typescript:
         specifier: ^5
         version: 5.5.4
+
+  libs/sample-lib: {}
 
 packages:
 
