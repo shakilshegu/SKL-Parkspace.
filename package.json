@@ -8,11 +8,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@skl-autospace/sample-lib": "^1.0.0",
     "api": "^6.1.2",
     "nest": "^0.1.6",
     "new": "^0.1.1"
   },
   "devDependencies": {
+    "prettier": "^3.0.0",
     "typescript": "^5.5.4"
   }
 }
