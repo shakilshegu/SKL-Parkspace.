@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@skl-autospace/sample-lib':
-        specifier: ^1.0.0
+        specifier: workspace:^
         version: link:libs/sample-lib
       api:
         specifier: ^6.1.2
@@ -22,10 +22,10 @@ importers:
         version: 0.1.1
     devDependencies:
       husky:
-        specifier: ^8.0.0
+        specifier: ^8.0.3
         version: 8.0.3
       prettier:
-        specifier: ^3.0.0
+        specifier: ^3.3.3
         version: 3.3.3
       ts-node:
         specifier: ^10.9.2
