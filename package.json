@@ -1,23 +1,32 @@
 {
-  "name": "@skl-autospace",
+  "name": "skl-autospace",
   "version": "1.0.0",
   "description": "",
   "private": "true",
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "libs/*"
+    ],
+    "nohoist": [
+      "**/@nestjs",
+      "**/@nestjs/**"
+    ]
+  },
   "scripts": {
     "format": "prettier  \"{apps,libs}/**/*.{ts,tsx,js,json}\" --ignore-path .gitignore",
-    "format:check": "pnpm format --check",
-    "format:write": "pnpm format --write",
-    "tsc": "pnpm --parallel -r run tsc",
-    "lint": "pnpm --parallel -r run lint",
-    "build": "pnpm --parallel -r run build",
-    "validate": "pnpm format:write && pnpm tsc && pnpm lint && pnpm build",
+    "format:check": "yarn format --check",
+    "format:write": "yarn format --write",
+    "tsc": "yarn nx run-many -t tsc",
+    "lint": "yarn nx run-many -t lint",
+    "build": "yarn nx run-many -t build",
+    "validate": "yarn format:write && yarn tsc && yarn lint && yarn build",
     "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@skl-autospace/sample-lib": "workspace:^",
     "api": "^6.1.2",
     "nest": "^0.1.6",
     "new": "^0.1.1"
@@ -26,6 +35,7 @@
     "husky": "^8.0.3",
     "prettier": "^3.3.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "nx": "19.7.0"
   }
 }
