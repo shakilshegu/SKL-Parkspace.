@@ -8,7 +8,6 @@ import {
 import { ReactNode } from 'react'
 import { setContext } from '@apollo/client/link/context'
 
-
 export interface IApolloProviderProps {
   children: ReactNode
 }
