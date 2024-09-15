@@ -18,11 +18,18 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "entity:gql": "npx nestjs-prisma-codegen --graphql",
+    "entity:rest": "npx nestjs-prisma-codegen --rest",
+    "entity:complete": "npx nestjs-prisma-codegen --complete"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed/index.ts"
   },
   "dependencies": {
     "@apollo/server": "^4.11.0",
     "@nestjs/apollo": "^12.2.0",
+    "@nestjs/cli": "^10.4.5",
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^3.2.3",
     "@nestjs/core": "^10.0.0",

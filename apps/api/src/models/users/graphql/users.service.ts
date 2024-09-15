@@ -50,6 +50,7 @@ export class UsersService {
     if (existingUser) {
       throw new BadRequestException('User already exists with this email.')
     }
+
     // Hash the password
     const salt = bcrypt.genSaltSync()
     const passwordHash = bcrypt.hashSync(password, salt)

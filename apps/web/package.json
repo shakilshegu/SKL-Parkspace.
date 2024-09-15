@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@skl-autospace/sample-lib": "*",
+    "@skl-autospace/network": "*",
     "next": "14.2.8",
     "react": "^18",
     "react-dom": "^18",
